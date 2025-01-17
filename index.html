@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHQ-9 Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question p {
+            margin: 0;
+        }
+        .options {
+            margin-top: 5px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PHQ-9 Assessment</h1>
+        <form>
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. Trouble falling or staying asleep, or sleeping too much?<br>มีปัญหานอนหลับหรือหลับมากเกินไป?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q4" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q4" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q4" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. Feeling tired or having little energy?<br>รู้สึกเหนื่อยหรือมีพลังงานน้อย?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q5" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q5" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q5" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. Poor appetite or overeating?<br>เบื่ออาหารหรือกินมากเกินไป?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q6" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q6" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q6" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Feeling bad about yourself — or that you are a failure or have let yourself or your family down?<br>รู้สึกแย่กับตัวเอง เช่น คิดว่าคุณล้มเหลวหรือทำให้ตัวเองหรือครอบครัวผิดหวัง?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q7" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q7" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q7" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. Trouble concentrating on things, such as reading the newspaper or watching television?<br>มีปัญหาในการมีสมาธิกับสิ่งต่างๆ เช่น การอ่านหนังสือพิมพ์หรือดูโทรทัศน์?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q8" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q8" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q8" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?<br>เคลื่อนไหวหรือพูดช้าจนคนอื่นสังเกตได้ หรือในทางตรงกันข้าม กระวนกระวายจนเคลื่อนไหวมากกว่าปกติ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="0"> Not at all / ไม่มีเลย</label>
+                    <label><input type="radio" name="q9" value="1"> Several days / เป็นบางวัน</label>
+                    <label><input type="radio" name="q9" value="2"> More than half the days / มากกว่าครึ่งหนึ่งของวัน</label>
+                    <label><input type="radio" name="q9" value="3"> Nearly every day / เกือบทุกวัน</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
